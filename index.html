@@ -44,6 +44,32 @@
 
   <!-- Scripts -->
   <script src="script.js"></script>
+  <script>
+    setTimeout(() => {
+      document.getElementById("popup").style.display = "block";
+      startCountdown();
+    }, 3000);
 
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    function startCountdown() {
+      const timerElement = document.getElementById("timer");
+      const targetTime = new Date();
+      targetTime.setHours(23, 59, 59);
+
+      setInterval(() => {
+        const now = new Date();
+        const remainingTime = targetTime - now;
+        if (remainingTime >= 0) {
+          const hours = String(Math.floor(remainingTime / 3600000)).padStart(2, '0');
+          const minutes = String(Math.floor((remainingTime % 3600000) / 60000)).padStart(2, '0');
+          const seconds = String(Math.floor((remainingTime % 60000) / 1000)).padStart(2, '0');
+          timerElement.textContent = `Oferta até ${hours}:${minutes}:${seconds}`;
+        }
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
