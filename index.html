@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregador de Links - Now Fakes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="URL_DA_SUA_LOGO_AQUI" alt="Logo Now Fakes">
+  </div>
+
+  <!-- Links Agregados -->
+  <div class="link-container">
+    <a href="https://discord.gg/SEU_LINK_DISCORD" target="_blank" class="link-button">
+      <img src="https://img.icons8.com/color/48/000000/discord-new-logo.png" alt="Discord"> Servidor Discord
+    </a>
+    <a href="https://wa.me/SEU_NUMERO_WHATSAPP" target="_blank" class="link-button">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"> Grupo WhatsApp
+    </a>
+    <a href="https://t.me/SEU_USUARIO_TELEGRAM" target="_blank" class="link-button">
+      <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"> Grupo Telegram
+    </a>
+    <a href="https://facebook.com/SEU_GRUPO_FACEBOOK" target="_blank" class="link-button">
+      <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"> Grupo Facebook
+    </a>
+    <a href="https://youtube.com/c/SEU_CANAL_YOUTUBE" target="_blank" class="link-button">
+      <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"> Canal YouTube
+    </a>
+  </div>
+
+  <!-- Slider de Vídeos -->
+  <div class="video-slider-container">
+    <div class="video-slider" id="videoSlider">
+      <div class="video-images" id="videoImages">
+        <div class="video-slide">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1?enablejsapi=1" allowfullscreen></iframe>
+        </div>
+        <div class="video-slide">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2?enablejsapi=1" allowfullscreen></iframe>
+        </div>
+        <div class="video-slide">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3?enablejsapi=1" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="video-control">
+      <button class="video-prev" onclick="moveVideoSlider(-1)">&#10094;</button>
+      <button class="video-next" onclick="moveVideoSlider(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Slider de Preços -->
+  <div class="price-slider-container">
+    <div class="price-slider" id="priceSlider">
+      <div class="price-images" id="priceImages">
+        <div class="price-page">
+          <img src="URL_DA_IMAGEM_1" alt="Preço 1" class="price-slide">
+        </div>
+        <div class="price-page">
+          <img src="URL_DA_IMAGEM_2" alt="Preço 2" class="price-slide">
+        </div>
+        <div class="price-page">
+          <img src="URL_DA_IMAGEM_3" alt="Preço 3" class="price-slide">
+        </div>
+      </div>
+    </div>
+    <div class="price-control">
+      <button class="price-prev" onclick="movePriceSlider(-1)">&#10094;</button>
+      <button class="price-next" onclick="movePriceSlider(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Botão do WhatsApp no canto inferior direito -->
+  <a href="https://wa.me/SEU_NUMERO_WHATSAPP" target="_blank" class="whatsapp-button">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
