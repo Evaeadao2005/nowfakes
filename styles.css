@@ -167,3 +167,70 @@ body {
   width: 40px;
   height: 40px;
 }
+.popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 320px;
+      background-color: #ff8c00;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      display: none;
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+    }
+
+    .popup h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
+    .popup p {
+      font-size: 16px;
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+
+    /* Botão de fechar */
+    .close-btn {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Estilo do cronômetro */
+    .timer {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* Botão Aproveitar Agora */
+    .action-btn {
+      display: block;
+      width: 100%;
+      background-color: #e63946;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .action-btn:hover {
+      background-color: #d62828;
+    }
