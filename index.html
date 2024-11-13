@@ -70,7 +70,7 @@
   <div class="logo-container">
 <img src="logo.png" alt="Logo Now Fakes" width="50%">
   </div>
-  <div class="popup" id="popup">
+   <div class="popup" id="popup">
     <span class="close-btn" onclick="closePopup()">✕</span>
     <h2>Super Oferta Limitada!</h2>
     <p>200 Fakes Nível 40 + Add Grátis por R$86</p>
@@ -108,15 +108,18 @@
   <!-- Scripts -->
   <script src="script.js"></script>
   <script>
+    // Mostra o popup após 3 segundos
     setTimeout(() => {
       document.getElementById("popup").style.display = "block";
       startCountdown();
     }, 3000);
 
+    // Fecha o popup
     function closePopup() {
       document.getElementById("popup").style.display = "none";
     }
 
+    // Inicia a contagem regressiva
     function startCountdown() {
       const timerElement = document.getElementById("timer");
       const targetTime = new Date();
