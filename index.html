@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16783771721">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16783771721"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-16783771721');
+  </script>
 
-  gtag('config', 'AW-16783771721');
-</script>
+  <!-- Configurações da Página -->
   <meta charset="UTF-8">
- <!-- Título da Página -->
-   <title>Now Fakes Oficial - Naruto Online, Fakes, Negociação de Contas e Comunidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Now Fakes Oficial é a melhor comunidade para Naruto Online! Fakes, negociações de contas, jogue agora e participe das melhores promoções.">
+  <meta name="keywords" content="fakes Naruto Online, jogar Naruto Online, comprar fakes, Naruto Online grátis, comunidade Naruto, raspadinha Naruto">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Now Fakes Oficial">
 
-   <!-- Meta Descrição -->
-   <meta name="description" content="Now Fakes Oficial é a sua comunidade exclusiva para Naruto Online, fakes e negociações de contas. Junte-se a nós para conteúdo, troca de contas e muito mais!">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Now Fakes Oficial - Naruto Online, Fakes e Comunidade">
+  <meta property="og:description" content="Junte-se à Now Fakes Oficial para Naruto Online, fakes e negociação de contas. A melhor comunidade está aqui!">
+  <meta property="og:url" content="https://nowfakes.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
 
-   <!-- Meta Keywords -->
-   <meta name="keywords" content="Naruto Online, fakes de Naruto, negociação de contas Naruto, comunidade Naruto, troca de contas Naruto, Naruto jogos online">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Now Fakes Oficial - Naruto Online, Fakes e Comunidade">
+  <meta name="twitter:description" content="Naruto Online, fakes e negociações de contas em um só lugar. Venha para a Now Fakes Oficial!">
 
-   <!-- Meta Robots -->
-   <meta name="robots" content="index, follow">
-
-   <!-- Open Graph Tags para Redes Sociais -->
-   <meta property="og:title" content="Now Fakes Oficial - Naruto Online, Fakes e Negociação de Contas">
-   <meta property="og:description" content="Acesse Now Fakes Oficial e entre para a nossa comunidade exclusiva de Naruto Online, fakes e negociações de contas!">
-   <meta property="og:url" content="https://nowfakes.netlify.app/">
-   <meta property="og:type" content="website">
-
-   <!-- Twitter Card Tags -->
-   <meta name="twitter:card" content="summary">
-   <meta name="twitter:title" content="Now Fakes Oficial - Naruto Online, Fakes e Negociação de Contas">
-   <meta name="twitter:description" content="Entre para a comunidade Now Fakes Oficial e aproveite Naruto Online, fakes e negociações de contas exclusivas!">
-
-   <!-- Charset -->
-   <meta charset="UTF-8">
-   
-   <!-- Viewport para responsividade -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
   <link rel="icon" href="logo.png" type="image/png">
- <title>Now Fakes Oficial - Redes Sociais e Comunidade</title>
- <style>
-    /* Estilos do Popup */
+
+  <!-- Título -->
+  <title>Now Fakes Oficial - Naruto Online, Fakes e Comunidade</title>
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+    }
+
+    .link-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .link-button img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .link-button:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.05);
+    }
+
     .popup {
       position: fixed;
       bottom: 20px;
       left: 5%;
-      width: 280px;
+      width: 300px;
       background-color: #222;
       color: #fff;
       padding: 15px;
@@ -60,31 +103,26 @@
       z-index: 1000;
       text-align: center;
     }
+
     .popup h2 {
       font-size: 18px;
       color: #ffa500;
       margin: 0 0 10px;
     }
+
     .popup p {
       font-size: 14px;
       margin: 0 0 10px;
     }
+
     .timer {
       font-size: 14px;
       font-weight: bold;
       color: #ff4500;
       margin-bottom: 10px;
     }
-    .close-btn {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      color: #aaa;
-      cursor: pointer;
-      font-size: 16px;
-    }
+
     .action-btn {
-      width: 800%;
       padding: 10px;
       background-color: #ff4500;
       color: #fff;
@@ -93,75 +131,79 @@
       font-weight: bold;
       font-size: 14px;
       transition: 0.3s;
-      margin-top: 10px;
     }
+
     .action-btn:hover {
       background-color: #ff7043;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Logo Now Fakes">
+    <h1>Now Fakes Oficial</h1>
+    <p>Jogue, negocie e entre para a maior comunidade de Naruto Online!</p>
+  </header>
 
-   <div class="popup" id="popup">
+  <!-- Popup de Oferta -->
+  <div class="popup" id="popup">
     <span class="close-btn" onclick="closePopup()">✕</span>
     <h2>Super Oferta Limitada!</h2>
     <p>200 Fakes Nível 40 + Add Grátis por R$86</p>
     <div class="timer" id="timer">Oferta até 23:59</div>
     <a href="https://wa.me/5553984469263?text=Estou%20interessado%20na%20mega%20oferta%20de%20200%20fakes%20lvl%2040%20+%20add%20gr%C3%A1tis%20por%20R$86!" target="_blank" class="action-btn">Aproveitar Agora</a>
   </div>
-  <!-- Links Agregados -->
-  <div class="link-container">
-  <!-- Logo -->
-  <div class="logo-container">
-<img src="logo.png" alt="Logo Now Fakes" width="250">
-  </div>
+
+  <!-- Links Importantes -->
+  <main class="link-container">
     <a href="https://discord.gg/UzGRDUgUwv" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/discord-new-logo.png" alt="Discord"> Servidor Discord
+      <img src="https://img.icons8.com/color/48/000000/discord-new-logo.png" alt="Discord"> Discord
     </a>
     <a href="https://chat.whatsapp.com/DGnnI9FYjaYGhU9y8veNuG" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"> Grupo WhatsApp
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"> WhatsApp
     </a>
     <a href="https://t.me/NarutoOnlinePTBR" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"> Grupo Telegram
+      <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"> Telegram
     </a>
     <a href="https://facebook.com/groups/narutoonlinetrocas" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"> Grupo Facebook
+      <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"> Facebook
     </a>
     <a href="https://www.youtube.com/@SakaiNowFakes" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"> Canal YouTube
+      <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"> YouTube
     </a>
     <a href="https://instagram.com/nowfakesnarutoonline" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"> Perfil Instagram
+      <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"> Instagram
     </a>
-  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DBehjGdRpC9/" data-instgrm-version="14" style="max-width: 540px; width: 70%;">
-    <div style="padding: 8px;">
-      <a href="https://www.instagram.com/p/DBehjGdRpC9/" target="_blank">Ver este post no Instagram</a>
-    </div>
-  </blockquote>
-  <script async src="//www.instagram.com/embed.js"></script>
-  </div>
+  </main>
 
-
-  <!-- Botão do WhatsApp no canto inferior direito -->
+  <!-- WhatsApp -->
   <a href="https://wa.me/5553984469263" target="_blank" class="whatsapp-button">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
 
+  <footer>
+    <p>© 2024 Now Fakes Oficial. Todos os direitos reservados.</p>
+  </footer>
+
   <!-- Scripts -->
-  <script src="script.js"></script>
   <script>
-    // Mostra o popup após 3 segundos
+    // Popup
     setTimeout(() => {
       document.getElementById("popup").style.display = "block";
       startCountdown();
     }, 3000);
 
-    // Fecha o popup
     function closePopup() {
       document.getElementById("popup").style.display = "none";
     }
 
-    // Inicia a contagem regressiva
     function startCountdown() {
       const timerElement = document.getElementById("timer");
       const targetTime = new Date();
@@ -170,11 +212,13 @@
       setInterval(() => {
         const now = new Date();
         const remainingTime = targetTime - now;
-        if (remainingTime >= 0) {
-          const hours = String(Math.floor(remainingTime / 3600000)).padStart(2, '0');
-          const minutes = String(Math.floor((remainingTime % 3600000) / 60000)).padStart(2, '0');
-          const seconds = String(Math.floor((remainingTime % 60000) / 1000)).padStart(2, '0');
-          timerElement.textContent = `Oferta até ${hours}:${minutes}:${seconds}`;
+        if (remainingTime <= 0) {
+          timerElement.innerText = "Oferta encerrada!";
+        } else {
+          const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+          const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+          timerElement.innerText = `${hours}h ${minutes}m ${seconds}s`;
         }
       }, 1000);
     }
