@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16799530418">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16799530418');
-</script>
-
-  <!-- Configurações da Página -->
+  <!-- Meta Tags Essenciais -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Now Fakes Oficial é a melhor comunidade para Naruto Online! Fakes, negociações de contas, jogue agora e participe das melhores promoções.">
-  <meta name="keywords" content="fakes Naruto Online, jogar Naruto Online, comprar fakes, Naruto Online grátis, comunidade Naruto, raspadinha Naruto">
+  <meta name="description" content="A Now Fakes é a comunidade líder de Naruto Online! Adquira fakes, negocie contas e aproveite as melhores promoções exclusivas.">
+  <meta name="keywords" content="Naruto Online, fakes, promoções Naruto, Now Fakes, jogar Naruto grátis, comunidade Naruto Online">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Now Fakes Oficial">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Now Fakes Oficial - Naruto Online, Fakes e Comunidade">
-  <meta property="og:description" content="Junte-se à Now Fakes Oficial para Naruto Online, fakes e negociação de contas. A melhor comunidade está aqui!">
-  <meta property="og:url" content="https://nowfakes.netlify.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="logo.png">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Now Fakes Oficial - Naruto Online, Fakes e Comunidade">
-  <meta name="twitter:description" content="Naruto Online, fakes e negociações de contas em um só lugar. Venha para a Now Fakes Oficial!">
-
-  <!-- Favicon -->
+  <!-- Título e Ícones -->
+  <title>Jogue Naruto Online e Compre Fakes para Raspadinha</title>
   <link rel="icon" href="logo.png" type="image/png">
-
-  <!-- Título -->
-  <title>Now Fakes Oficial - Naruto Online, Fakes e Comunidade</title>
 
   <!-- Estilo -->
   <link rel="stylesheet" href="styles.css">
   <style>
-.disqus-container {
-    width: 100%;
-heiht: 100%;
-}
-/* Alterando o fundo e a cor do texto do Disqus */
-#disqus_thread {
-    background-color: #000; /* Altere para a cor de fundo desejada */
-}
-
-#disqus_thread .disqus-comment .disqus-comment-body {
-    color: #fff; /* Altere para a cor do texto desejada */
-}
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #black;
+      background-color: #1e1e1e;
+      color: #fff;
     }
 
     header {
-      background-color: #222;
-      color: #fff;
-      padding: 15px 0;
+      background-color: #ff4500;
       text-align: center;
+      padding: 20px;
+      color: #fff;
     }
 
     header img {
-      width: 150px;
+      max-width: 120px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 5px 0 15px;
+    }
+
+    .promo-banner {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .promo-banner h2 {
+      font-size: 22px;
+      color: #ffa500;
+      margin-bottom: 10px;
+    }
+
+    .promo-banner p {
+      font-size: 18px;
+    }
+
+    .action-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff7043;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .action-btn:hover {
+      background-color: #ff8a65;
     }
 
     .link-container {
@@ -77,18 +83,17 @@ heiht: 100%;
       flex-wrap: wrap;
       justify-content: center;
       padding: 20px;
+      gap: 15px;
     }
 
     .link-button {
       display: flex;
       align-items: center;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #fff;
-      border: 1px solid #ddd;
+      background-color: #333;
+      padding: 10px;
       border-radius: 8px;
       text-decoration: none;
-      color: #333;
+      color: #fff;
       font-size: 16px;
       transition: 0.3s;
     }
@@ -99,102 +104,60 @@ heiht: 100%;
     }
 
     .link-button:hover {
-      background-color: #f0f0f0;
-      transform: scale(1.05);
+      background-color: #444;
     }
 
-    .popup {
-      position: fixed;
-      bottom: 20px;
-      left: 5%;
-      width: 300px;
-      background-color: #222;
-      color: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
-      display: none;
-      z-index: 1000;
+    .play-button {
+      margin-top: 20px;
       text-align: center;
     }
 
-    .popup h2 {
+    .play-button a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #4caf50;
+      color: white;
       font-size: 18px;
-      color: #ffa500;
-      margin: 0 0 10px;
-    }
-
-    .popup p {
-      font-size: 14px;
-      margin: 0 0 10px;
-    }
-
-    .timer {
-      font-size: 14px;
       font-weight: bold;
-      color: #ff4500;
-      margin-bottom: 10px;
-    }
-
-    .action-btn {
-      padding: 10px;
-      background-color: #ff4500;
-      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 14px;
+      border-radius: 8px;
       transition: 0.3s;
     }
 
-    .action-btn:hover {
-      background-color: #ff7043;
+    .play-button a:hover {
+      background-color: #66bb6a;
     }
 
     footer {
-      background-color: #222;
-      color: #fff;
+      background-color: #111;
       text-align: center;
-      padding: 10px 0;
+      padding: 10px;
+      color: #aaa;
     }
   </style>
-<style>.play-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff4500;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.play-button:hover {
-    background-color: #ff7043;
-    transform: scale(1.05);
-}</style>
 </head>
 <body>
-<header>
+  <!-- Cabeçalho -->
+  <header>
     <img src="logo.png" alt="Logo Now Fakes">
     <h1>Now Fakes Oficial</h1>
-    <p>Jogue, negocie e entre para a maior comunidade de Naruto Online!</p>
-    <a href="https://naruto.narutowebgame.com/pt" target="_blank" class="play-button">Jogar Naruto Online Oficial</a>
-</header>
+    <p>A maior comunidade de Naruto Online está aqui!</p>
+  </header>
 
-  <!-- Popup de Oferta -->
-  <div class="popup" id="popup">
-    <span class="close-btn" onclick="closePopup()">✕</span>
-    <h2>Super Oferta Limitada!</h2>
-    <p>200 Fakes Nível 40 + Add Grátis por R$86</p>
-    <div class="timer" id="timer">Oferta até 23:59</div>
-    <a href="https://wa.me/5553984469263?text=Estou%20interessado%20na%20mega%20oferta%20de%20200%20fakes%20lvl%2040%20+%20add%20gr%C3%A1tis%20por%20R$86!" target="_blank" class="action-btn">Aproveitar Agora</a>
-  </div>
+  <!-- Promoção Principal -->
+  <section class="promo-banner">
+    <h2>🚀 Super Oferta: 200 Fakes Nível 40 + Add Grátis! 🚀</h2>
+    <p>Por apenas <strong>R$86</strong>, conquiste sua vantagem em Naruto Online agora.</p>
+    <a href="https://wa.me/5553984469263?text=Quero%20a%20promoção%20de%20200%20fakes%20nível%2040!" target="_blank" class="action-btn">Quero Aproveitar!</a>
+  </section>
+
+  <!-- Botão para Jogar -->
+  <section class="play-button">
+    <a href="https://naruto.narutowebgame.com/pt" target="_blank">🎮 Jogar Naruto Online</a>
+  </section>
 
   <!-- Links Importantes -->
-  <main class="link-container">
+  <section class="link-container">
     <a href="https://discord.gg/UzGRDUgUwv" target="_blank" class="link-button">
       <img src="https://img.icons8.com/color/48/000000/discord-new-logo.png" alt="Discord"> Discord
     </a>
@@ -210,75 +173,11 @@ heiht: 100%;
     <a href="https://www.youtube.com/@SakaiNowFakes" target="_blank" class="link-button">
       <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"> YouTube
     </a>
-    <a href="https://instagram.com/nowfakesnarutoonline" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"> Instagram
-    </a>
-<div class="disqus-container">
-   
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://nowfakes.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </main>
- <div id="disqus_thread"></div>
-</div>
+  </section>
 
-  </main>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/5553984469263" target="_blank" class="whatsapp-button">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-  </a>
-
+  <!-- Rodapé -->
   <footer>
     <p>© 2024 Now Fakes Oficial. Todos os direitos reservados.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Popup
-    setTimeout(() => {
-      document.getElementById("popup").style.display = "block";
-      startCountdown();
-    }, 3000);
-
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-    }
-
-    function startCountdown() {
-      const timerElement = document.getElementById("timer");
-      const targetTime = new Date();
-      targetTime.setHours(23, 59, 59);
-
-      setInterval(() => {
-        const now = new Date();
-        const remainingTime = targetTime - now;
-        if (remainingTime <= 0) {
-          timerElement.innerText = "Oferta encerrada!";
-        } else {
-          const hours = Math.floor(remainingTime / (1000 * 60 * 60));
-          const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-          timerElement.innerText = `${hours}h ${minutes}m ${seconds}s`;
-        }
-      }, 1000);
-    }
-  </script>
 </body>
 </html>
