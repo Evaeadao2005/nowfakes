@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Meta Description (melhorada para incluir palavras-chave) -->
+  <meta name="description" content="Baixe o Launcher Lite (Blue) + Trainer Hack para Naruto Online. Inclui speedhack, liberação de sistemas e teleport. Desative o Windows Defender se necessário. Tutorial disponível.">
+  
+  <!-- Meta Keywords (palavras-chave estratégicas) -->
+  <meta name="keywords" content="Launcher Lite Blue, Trainer Hack Naruto Online, speedhack Naruto Online, teleport Naruto Online, liberar sistemas Naruto Online, download Launcher Lite Blue, desativar Windows Defender, tutorial Launcher Lite Blue">
+  
+  <!-- Autor -->
+  <meta name="author" content="Now Fakes Oficial">
+  
+  <!-- Título otimizado -->
+  <title>Download Launcher Lite (Blue) + Trainer Hack - Now Fakes</title>
+  
+  <!-- Open Graph (para redes sociais) -->
+  <meta property="og:title" content="Download Launcher Lite (Blue) + Trainer Hack - Now Fakes">
+  <meta property="og:description" content="Baixe o Launcher Lite (Blue) + Trainer Hack para Naruto Online. Inclui speedhack, liberação de sistemas e teleport. Desative o Windows Defender se necessário. Tutorial disponível.">
+  <meta property="og:image" content="https://narutoonline.shop/logo.png">
+  <meta property="og:url" content="https://narutoonline.shop/download-launcher-trainer">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card (para Twitter) -->
+  <meta name="twitter:title" content="Download Launcher Lite (Blue) + Trainer Hack - Now Fakes">
+  <meta name="twitter:description" content="Baixe o Launcher Lite (Blue) + Trainer Hack para Naruto Online. Inclui speedhack, liberação de sistemas e teleport. Desative o Windows Defender se necessário. Tutorial disponível.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://narutoonline.shop/logo.png">
+  
+  <!-- Folha de estilo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Canonical URL (para evitar conteúdo duplicado) -->
+  <link rel="canonical" href="https://narutoonline.shop/download-launcher-trainer">
+  
+  <!-- Schema Markup (para SEO avançado) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Launcher Lite (Blue) + Trainer Hack",
+      "description": "Baixe o Launcher Lite (Blue) + Trainer Hack para Naruto Online. Inclui speedhack, liberação de sistemas e teleport.",
+      "applicationCategory": "Game",
+      "operatingSystem": "Windows",
+      "downloadUrl": "https://mega.nz/folder/ulhwQBhL#-VFoZGaHiC5F9fSnYJA3-Q",
+      "author": {
+        "@type": "Organization",
+        "name": "Now Fakes"
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      padding: 20px;
+      background: linear-gradient(90deg, #ff7043, #f44336);
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo h1 {
+      font-size: 26px;
+      color: #fff;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    header nav {
+      display: flex;
+      align-items: center;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ff8a65;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #1e1e1e;
+      border-bottom: 2px solid #ff7043;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #ff7043;
+      font-weight: bold;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #f5f5f5;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .hero a {
+      padding: 15px 30px;
+      background-color: #ff7043;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero a:hover {
+      background-color: #ff8a65;
+    }
+
+    .hero a i {
+      font-size: 24px;
+    }
+
+    /* CAROUSEL */
+    .carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      transition: background 0.3s ease;
+    }
+
+    .carousel button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .carousel button.prev {
+      left: 10px;
+    }
+
+    .carousel button.next {
+      right: 10px;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content {
+      background-color: #292929;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
+      overflow: auto;
+      position: relative;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 60px 20px;
+      background: #1e1e1e;
+    }
+
+    .faq h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff7043;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .faq ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq li {
+      background: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .faq li strong {
+      color: #ffa500;
+    }
+
+    /* AVALIAÇÕES */
+    .avaliacoes {
+      padding: 60px 20px;
+      background: #1e1e1e;
+    }
+
+    .avaliacoes h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff7043;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .avaliacao {
+      background: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .avaliacao h3 {
+      color: #ffa500;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .avaliacao p {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin-bottom: 10px;
+    }
+
+    .avaliacao .nota {
+      font-size: 20px;
+      color: #ff8a65;
+    }
+
+    /* SOCIAL ICONS */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .social a {
+      color: #fff;
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+    }
+
+    /* ANIMAÇÕES */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsive Iframe */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 20px auto;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://www.narutoonline.shop/logo.png" alt="Now Fakes Logo">
+      <h1>Now Fakes - Naruto Online</h1>
+    </div>
+    <nav>
+      <a href="https://www.narutoonline.shop">Home</a>
+      <a href="https://www.narutoonline.shop/sobre-nos">Sobre Nós</a>
+      <div class="dropdown">
+        <a href="#">Downloads</a>
+        <div class="dropdown-content">
+          <a href="/download-launcher-fakes">Launcher de Fakes</a>
+          <a href="/download-launcher-trainer">Launcher + Trainer Hack</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Download Launcher Lite (Blue) + Trainer Hack</h2>
+    <p>Baixe agora o Launcher Lite (Blue) + Trainer Hack para Naruto Online. Inclui funcionalidades como speedhack, liberação de sistemas e teleport.</p>
+    <p><strong>Atenção:</strong> Caso não consiga abrir o Launcher, desative o Windows Defender temporariamente. Confira o tutorial aqui: <a href="https://www.youtube.com/watch?v=XaTf-GZfpgc" target="_blank">Ver Tutorial</a></p>
+    <div class="buttons">
+      <a href="https://mega.nz/folder/ulhwQBhL#-VFoZGaHiC5F9fSnYJA3-Q" class="download">Baixar Launcher Lite + Trainer</a>
+    </div>
+  </section>
+
+  <!-- YOUTUBE VIDEO -->
+  <section class="hero">
+    <h2>Vídeo do Launcher Lite (Blue) + Trainer Hack</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/MOoeSYd4mOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+</body>
+</html>
