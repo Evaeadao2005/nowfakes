@@ -1,184 +1,481 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Meta Tags Essenciais -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A Now Fakes é a comunidade líder de Naruto Online! Adquira fakes, negocie contas e aproveite as melhores promoções exclusivas.">
-  <meta name="keywords" content="Naruto Online, fakes, promoções Naruto, Now Fakes, jogar Naruto grátis, comunidade Naruto Online">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Now Fakes Oficial">
-
-  <!-- Título e Ícones -->
-  <title>Jogue Naruto Online e Compre Fakes para Raspadinha</title>
-  <link rel="icon" href="logo.png" type="image/png">
-
-  <!-- Estilo -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Venda de fakes e serviços para Naruto Online com entrega rápida, segurança e bônus exclusivos.">
+  <meta name="keywords" content="Naruto Online, fakes, serviços, Now Fakes, raspadinha, bônus exclusivos, jogue naruto online">
+  <meta name="author" content="Sakai">
+  <title>Now Fakes - Fakes e Serviços para Naruto Online/title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* RESET */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #1e1e1e;
-      color: #fff;
+      box-sizing: border-box;
     }
 
-    header {
-      background-color: #ff4500;
-      text-align: center;
-      padding: 20px;
-      color: #fff;
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
 
-    header img {
-      max-width: 120px;
-    }
-
-    header h1 {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-
-    header p {
-      font-size: 18px;
-      margin: 5px 0 15px;
-    }
-
-    .promo-banner {
-      background-color: #222;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .promo-banner h2 {
-      font-size: 22px;
-      color: #ffa500;
-      margin-bottom: 10px;
-    }
-
-    .promo-banner p {
-      font-size: 18px;
-    }
-
-    .action-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #ff7043;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
+    a {
       text-decoration: none;
-      border-radius: 5px;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      padding: 20px;
+      background: linear-gradient(90deg, #ff7043, #f44336);
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espaço entre a logo e o texto */
+    }
+
+    .logo img {
+      height: 50px; /* Ajuste a altura conforme necessário */
+      width: auto; /* Mantém a proporção da imagem */
+    }
+
+    .logo h1 {
+      font-size: 26px;
+      color: #fff;
+      font-weight: bold;
+      margin: 0; /* Remove margem padrão do h1 */
+    }
+
+    header nav {
+      display: flex;
+      align-items: center;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
       transition: 0.3s;
     }
 
-    .action-btn:hover {
+    header nav a:hover {
+      color: #ff8a65;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #1e1e1e;
+      border-bottom: 2px solid #ff7043;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #ff7043;
+      font-weight: bold;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #f5f5f5;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .hero a {
+      padding: 15px 30px;
+      background-color: #ff7043;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero a:hover {
       background-color: #ff8a65;
     }
 
-    .link-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 15px;
+    .hero a i {
+      font-size: 24px;
     }
 
-    .link-button {
+    /* CAROUSEL */
+    .carousel {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-inner {
       display: flex;
-      align-items: center;
-      background-color: #333;
-      padding: 10px;
-      border-radius: 8px;
-      text-decoration: none;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto; /* Altura automática para manter proporções */
+      object-fit: contain; /* Garante que a imagem não seja cortada */
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
       color: #fff;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    .link-button img {
-      width: 24px;
-      margin-right: 10px;
-    }
-
-    .link-button:hover {
-      background-color: #444;
-    }
-
-    .play-button {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .play-button a {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #4caf50;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .play-button a:hover {
-      background-color: #66bb6a;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
+      border: none;
       padding: 10px;
-      color: #aaa;
+      cursor: pointer;
+      font-size: 24px;
+      transition: background 0.3s ease;
+    }
+
+    .carousel button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .carousel button.prev {
+      left: 10px;
+    }
+
+    .carousel button.next {
+      right: 10px;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content {
+      background-color: #292929;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
+      overflow: auto;
+      position: relative;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 60px 20px;
+      background: #1e1e1e;
+    }
+
+    .faq h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff7043;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .faq ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq li {
+      background: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .faq li strong {
+      color: #ffa500;
+    }
+
+    /* AVALIAÇÕES */
+    .avaliacoes {
+      padding: 60px 20px;
+      background: #1e1e1e;
+    }
+
+    .avaliacoes h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff7043;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .avaliacao {
+      background: #292929;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .avaliacao h3 {
+      color: #ffa500;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .avaliacao p {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin-bottom: 10px;
+    }
+
+    .avaliacao .nota {
+      font-size: 20px;
+      color: #ff8a65;
+    }
+
+    /* SOCIAL ICONS */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .social a {
+      color: #fff;
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+    }
+
+    /* ANIMAÇÕES */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
+  <!-- HEADER -->
   <header>
-    <img src="logosakai.avif" alt="Logo Now Fakes">
-    <h1>Now Fakes Oficial</h1>
-    <p>A maior comunidade de Naruto Online está aqui!</p>
+    <div class="logo">
+      <img src="https://narutoonline.shop/logo.png" alt="Now Fakes Logo">
+      <h1>Now Fakes - Naruto Online</h1>
+    </div>
+    <nav>
+      <a href="https://narutoonline.shop">Home</a>
+      <a href="https://narutoonline.shop/sobre-nos">Sobre Nós</a>
+      <div class="dropdown">
+        <a href="">Downloads</a>
+        <div class="dropdown-content">
+          <a href="https://narutoonline.shop/download-launcher-fakes">Launcher de Fakes</a>
+          <a href="https://narutoonline.shop/download-launcher-trainer">Launcher + Trainer Hack</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Promoção Principal -->
-  <section class="promo-banner">
-    <h2>🚀 Super Oferta: 200 Fakes Nível 40 + Add Grátis! 🚀</h2>
-    <p>Por apenas <strong>R$86</strong>, conquiste sua vantagem em Naruto Online agora.</p>
-    <a href="https://wa.me/5588992532304?text=Quero%20a%20promoção%20de%20200%20fakes%20nível%2040!" target="_blank" class="action-btn">Quero Aproveitar!</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>🔥 Oferta Especial: 200 Fakes Nível 40 + Add Grátis por R$86! 🔥</h2>
+    <p>Compre agora e garanta o melhor pacote de fakes do Naruto Online com 10% de bônus!</p>
+    <div class="buttons">
+      <a href="https://wa.me/5588992532304">
+        <i class="fab fa-whatsapp"></i> Fazer Pedido (WhatsApp)
+      </a>
+      <a href="https://discord.gg/UzGRDUgUwv">
+        <i class="fab fa-discord"></i> Fazer Pedido (Discord)
+      </a>
+    </div>
   </section>
 
-  <!-- Botão para Jogar -->
-  <section class="play-button">
-    <a href="https://naruto.narutowebgame.com/pt" target="_blank">🎮 Jogar Naruto Online</a>
+  <!-- CAROUSEL -->
+  <div class="carousel">
+    <div class="carousel-inner">
+      <img src="https://i.imgur.com/WXmSSkj.png" alt="Tabela de Fakes" onclick="openModal('https://i.imgur.com/WXmSSkj.png')">
+      <img src="https://i.imgur.com/C070ViS.png" alt="Tabela de Serviços" onclick="openModal('https://i.imgur.com/C070ViS.png')">
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">×</span>
+      <img src="" alt="Imagem Ampliada">
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>❓ Perguntas Frequentes</h2>
+    <ul>
+      <li><strong>Prazo:</strong> Nível 30: 9 dias | Nível 40: 15 dias.</li>
+      <li><strong>Pagamento:</strong> 50% na entrada, 50% no final.</li>
+      <li><strong>Segurança:</strong> Risco de ban: zero.</li>
+      <li><strong>Região:</strong> Atendemos todas as regiões do Naruto Online.</li>
+      <li><strong>Bônus:</strong> Até 10% de fakes extras em qualquer pedido!</li>
+      <li><strong>Entrega:</strong> Via DM ou WhatsApp.</li>
+    </ul>
   </section>
 
-  <!-- Links Importantes -->
-  <section class="link-container">
-    <a href="https://discord.gg/UzGRDUgUwv" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/discord-new-logo.png" alt="Discord"> Discord
-    </a>
-    <a href="https://chat.whatsapp.com/DGnnI9FYjaYGhU9y8veNuG" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"> WhatsApp
-    </a>
-    <a href="https://t.me/NarutoOnlinePTBR" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram"> Telegram
-    </a>
-    <a href="https://facebook.com/groups/narutoonlinetrocas" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"> Facebook
-    </a>
-    <a href="https://www.youtube.com/@SakaiNowFakes" target="_blank" class="link-button">
-      <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"> YouTube
-    </a>
+  <!-- AVALIAÇÕES -->
+  <section class="avaliacoes">
+    <h2>🌟 Avaliações de Clientes 🌟</h2>
+    <div class="avaliacao">
+      <h3>Lucas Fernandes</h3>
+      <p>"Recebi 50 fakes a mais! O gerenciamento das fakes ficou muito mais fácil com a plataforma deles. Recomendo a todos que querem um serviço rápido e de confiança. Fui surpreendido com a entrega antes do prazo. Pode confiar!"</p>
+      <span class="nota">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="avaliacao">
+      <h3>Gustavo Silva</h3>
+      <p>"Serviço excepcional! A entrega foi super rápida, muito antes do prazo esperado. O gerenciador de fakes é uma mão na roda e facilitou minha vida. A confiança é total, vou continuar comprando com eles!"</p>
+      <span class="nota">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="avaliacao">
+      <h3>Ana Costa</h3>
+      <p>"Comprei fakes para minha conta e o nível de qualidade foi simplesmente incrível. Entregaram tudo antes do prazo, com 50 fakes extras de graça! Atendimento nota 10, sempre me ajudando com as dúvidas. Super recomendo!"</p>
+      <span class="nota">⭐⭐⭐⭐⭐</span>
+    </div>
   </section>
 
-  <!-- Rodapé -->
-<footer>
-    <p>© 2025 NOW Fakes - Todos os direitos reservados - Assessoria e desenvolvimento estratégico por <a href="https://instagram.com/agenciadalmon" target="_blank">Agência Dalmon - @agenciadalmon</a>
-    </p>
-</footer>
+  <!-- SOCIAL LINKS -->
+  <div class="social">
+    <a href="https://wa.me/5588992532304" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://discord.gg/UzGRDUgUwv" aria-label="Discord"><i class="fab fa-discord"></i></a>
+    <a href="https://t.me/NarutoOnlinePTBR" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+    <a href="https://www.instagram.com/@nowfakesnarutoonline" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/groups/narutoonlinetrocas" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <script>
+    // Carrossel
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-inner img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      const carouselInner = document.querySelector('.carousel-inner');
+      carouselInner.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    // Modal
+    function openModal(imgSrc) {
+      const modal = document.getElementById("modal");
+      const modalImg = modal.querySelector("img");
+      modal.style.display = "flex";
+      modalImg.src = imgSrc;
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    // Fechar modal ao clicar fora
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
