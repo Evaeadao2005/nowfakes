@@ -485,45 +485,65 @@
   </div>
 
   <script>
-    // Carrossel
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-inner img');
-    const totalSlides = slides.length;
+  // Carrossel
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-inner img');
+const totalSlides = slides.length;
+let autoSlideInterval;
 
-    function showSlide(index) {
-      const carouselInner = document.querySelector('.carousel-inner');
-      carouselInner.style.transform = `translateX(-${index * 100}%)`;
-    }
+function showSlide(index) {
+  const carouselInner = document.querySelector('.carousel-inner');
+  carouselInner.style.transform = `translateX(-${index * 100}%)`;
+}
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }
+// Função para avançar para o próximo slide
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+  resetAutoSlide(); // Reiniciar o intervalo a cada interação
+}
 
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      showSlide(currentSlide);
-    }
+// Função para voltar para o slide anterior
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+  resetAutoSlide(); // Reiniciar o intervalo a cada interação
+}
 
-    // Modal
-    function openModal(imgSrc) {
-      const modal = document.getElementById("modal");
-      const modalImg = modal.querySelector("img");
-      modal.style.display = "flex";
-      modalImg.src = imgSrc;
-    }
+// Iniciar o carrossel automático
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 3000); // Avançar a cada 3 segundos
+}
 
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-    }
+// Reiniciar o intervalo para que o carrossel continue a funcionar automaticamente após interação
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval); // Limpar o intervalo existente
+  startAutoSlide(); // Iniciar um novo intervalo
+}
 
-    // Fechar modal ao clicar fora
-    window.onclick = function(event) {
-      const modal = document.getElementById("modal");
-      if (event.target === modal) {
-        closeModal();
-      }
-    }
+// Iniciar o carrossel automático assim que a página carregar
+window.onload = startAutoSlide;
+
+// Modal
+function openModal(imgSrc) {
+  const modal = document.getElementById("modal");
+  const modalImg = modal.querySelector("img");
+  modal.style.display = "flex";
+  modalImg.src = imgSrc;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// Fechar modal ao clicar fora
+window.onclick = function(event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    closeModal();
+  }
+}
+
   </script>
 </body>
 </html>
