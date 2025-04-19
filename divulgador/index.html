@@ -31,9 +31,16 @@
   <!-- Seção de Redirecionamento -->
   <input type="text" id="codigoInput" placeholder="Digite um código" />
   <button onclick="iniciarRedirecionamento()" class="color-button" style="background-color: #F44336;"></button>
+  <button onclick="copiarNick1()" class="color-button" style="background-color: #4CAF50;"></button>
+  <button onclick="copiarNick2()" class="color-button" style="background-color: #12C127;"></button>
+  <button onclick="copiarNick3()" class="color-button" style="background-color: #3FC167;"></button>
+  <button onclick="copiarNick4()" class="color-button" style="background-color: #4FC107;"></button>
   <div id="registroLink"></div>
   <div id="loginLink"></div>
   <div id="gameLink"></div>
+
+  <!-- Seção de Botão Laranja -->
+  <button class="orange-button" onclick="openPopup()"></button>
 
   <script>
     // Lista de servidores incorporada
@@ -168,6 +175,24 @@
         document.body.removeChild(textarea);
       }
     }
+
+    // Função para abrir pop-up
+    function openPopup() {
+      window.open('https://narutorecall.oasgames.com/pt/return', '_blank', 'width=600,height=400');
+    }
+
+    // Funções para copiar nicks
+    function copiarNick1() {
+      copiarParaAreaDeTransferencia("Kaze´Vex");
+    }
+    function copiarNick2() {
+      copiarParaAreaDeTransferencia("S130-Kazu");
+    }
+    function copiarNick3() {
+      copiarParaAreaDeTransferencia("S702-KhaLiL");
+    }
+    function copiarNick4() {
+      copiarParaAreaDeTransferencia("S773-Neljjz");
     }
   </script>
 </body>
