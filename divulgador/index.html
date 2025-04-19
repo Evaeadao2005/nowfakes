@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Macro de Criação de Contas</title>
+  <style>
+    .color-button {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .orange-button {
+      background-color: orange;
+      border: none;
+      width: 100px;
+      height: 40px;
+    }
+    .server-info {
+      margin-top: 10px;
+      padding: 5px;
+      background-color: #f0f0f0;
+    }
+    .purple-button {
+      background-color: #9C27B0;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Seção de Redirecionamento -->
+  <input type="text" id="codigoInput" placeholder="Digite um código" />
+  <button onclick="iniciarRedirecionamento()" class="color-button" style="background-color: #F44336;"></button>
+  <div id="registroLink"></div>
+  <div id="loginLink"></div>
+  <div id="gameLink"></div>
+
+  <script>
+    // Lista de servidores incorporada
+    const servidoresIncorporados = `
+      PT|159
+      PT|160
+      ES|301
+      ES|302
+      EN|401
+      EN|402
+      DE|501
+      DE|502
+    `;
+
+    let servidores = [];
+    let ultimoServidorSelecionado = null;
+    let ultimoCodigoGerado = '';
+
+    // Carrega os servidores incorporados quando a página é carregada
+    window.onload = function() {
+      processarServidoresIncorporados();
+    };
+
+    // Processa a lista de servidores incorporada
+    function processarServidoresIncorporados() {
+      const linhas = servidoresIncorporados.split('\n');
+      servidores = [];
+      
+      linhas.forEach(linha => {
+        linha = linha.trim();
+        if (linha) {
+          const partes = linha.split('|');
+          if (partes.length >= 2) {
+            servidores.push({
+              regiao: partes[0].trim(),
+              numero: partes[1].trim()
+            });
+          }
+        }
+      });
+      
+      console.log('Servidores carregados:', servidores);
+    }
+
+    // Função para iniciar o redirecionamento
+    function iniciarRedirecionamento() {
+      var codigoInput = document.getElementById('codigoInput').value;
+      
+      if (codigoInput) {
+        ultimoCodigoGerado = codigoInput;
+      } else {
+        ultimoCodigoGerado = generateRandomCode(12);
+      }
+
+      // Seleciona um servidor aleatório
+      ultimoServidorSelecionado = selecionarServidorAleatorio();
+
+      // Monta o código completo
+      const codigoCompleto = `${ultimoCodigoGerado}|${ultimoServidorSelecionado.numero}|${ultimoServidorSelecionado.regiao}`;
+      
+      copiarParaAreaDeTransferencia(codigoCompleto);
+
+      // Exibe o link de registro
+      var urlRegistro = 'https://passport.narutowebgame.com/index.php?m=register&email=' + codigoCompleto + '&pwd=080808';
+      document.getElementById('registroLink').innerHTML = '<a href="' + urlRegistro + '" target="_blank"><button class="color-button" style="background-color: #3F51B5;"></button></a>';
+
+      // Exibe o link de login após 3 segundos
+      setTimeout(function() {
+        var urlLogin = 'https://passport.narutowebgame.com/index.php?m=login&email=' + codigoCompleto + '&pwd=080808';
+        document.getElementById('loginLink').innerHTML = '<a href="' + urlLogin + '" target="_blank"><button class="color-button" style="background-color: #FFEB3B;"></button></a>';
+        
+        // Exibe o botão para entrar no jogo
+        var urlJogo = `https://naruto.narutowebgame.com/${ultimoServidorSelecionado.regiao}/serverlist/s${ultimoServidorSelecionado.numero}?leftbar_collapse=yes&logintype=4`;
+        document.getElementById('gameLink').innerHTML = '<button onclick="abrirJanela(\'' + urlJogo + '\')" class="purple-button"></button>';
+      }, 3000);
+    }
+
+    // Seleciona um servidor aleatório
+    function selecionarServidorAleatorio() {
+      const randomIndex = Math.floor(Math.random() * servidores.length);
+      return servidores[randomIndex];
+    }
+
+    // Função para abrir janela do jogo
+    function abrirJanela(url) {
+      var janelaPopup = window.open(url, "MeuPopup", "width=800,height=600");
+      if (janelaPopup) {
+        janelaPopup.focus();
+      }
+    }
+
+    // Função para gerar código aleatório
+    function generateRandomCode(length) {
+      var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var code = '';
+      for (var i = 0; i < length; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return code;
+    }
+
+    // Função para copiar texto para a área de transferência
+    function copiarParaAreaDeTransferencia(texto) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(texto)
+          .then(() => alert('O código foi copiado para a área de transferência.'))
+          .catch(err => {
+            console.error('Falha ao copiar: ', err);
+            copiarFallback(texto);
+          });
+      } else {
+        copiarFallback(texto);
+      }
+    }
+
+    function copiarFallback(texto) {
+      const textarea = document.createElement('textarea');
+      textarea.value = texto;
+      textarea.style.position = 'fixed';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      
+      try {
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'O código foi copiado para a área de transferência.' : 'Não foi possível copiar o código.';
+        alert(msg);
+      } catch (err) {
+        console.error('Falha ao copiar o código para a área de transferência:', err);
+        alert('Seu navegador não suporta a função de cópia automática. Por favor, copie o código manualmente.');
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    }
+    }
+  </script>
+</body>
+</html>
