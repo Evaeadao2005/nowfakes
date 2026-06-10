@@ -1,0 +1,12 @@
+# Source assets kept for local regeneration. Optimized WebP files are deployed instead.
+logo.png
+logosakai.avif
+Preços BR.png
+Preços NA.png
+ServicosBR.jpg
+ServicosNA.jpg
+PROMO1.jpg
+PROMO2.jpg
+
+# Local build tooling is not needed in the static deploy.
+tools/
