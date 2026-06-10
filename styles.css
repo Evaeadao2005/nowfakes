@@ -402,6 +402,30 @@ h3 {
   color: var(--muted);
 }
 
+.text-link {
+  width: fit-content;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--red);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.section-actions {
+  width: min(100%, 1080px);
+  margin: 18px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .conversion-strip {
   width: min(100%, 980px);
   margin: 0 auto;

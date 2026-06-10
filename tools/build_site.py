@@ -21,6 +21,7 @@ WHATSAPP_ORDER = "https://wa.me/555384469263?text=Ol%C3%A1%21%20Quero%20fakes%20
 WHATSAPP_GROUP = "https://chat.whatsapp.com/DGnnI9FYjaYGhU9y8veNuG"
 DISCORD_URL = "https://discord.gg/UzGRDUgUwv"
 FACEBOOK_URL = "https://facebook.com/groups/narutoonlinetrocas"
+OFFICIAL_NARUTO_URL = "https://naruto.narutowebgame.com/pt/"
 
 
 def clean(text: str) -> str:
@@ -156,6 +157,7 @@ NAV_ITEMS = [
     ("Início", "/"),
     ("Fakes para raspadinha", "/#fakes-raspadinha"),
     ("Preços", "/#precos"),
+    ("Jogar Naruto Online", "/jogar-naruto-online/"),
     ("Launcher", "/download-launcher-fakes/"),
     ("Sobre", "/sobre-nos/"),
 ]
@@ -195,6 +197,7 @@ def footer() -> str:
         <div class="universal-footer__grid">
           <nav class="universal-footer__column" aria-label="Principal" data-label="Principal">
             <a class="universal-footer__link" href="/">Início</a>
+            <a class="universal-footer__link" href="/jogar-naruto-online/">Jogar Naruto Online</a>
             <a class="universal-footer__link" href="/#fakes-raspadinha">Fakes para raspadinha</a>
             <a class="universal-footer__link" href="/#precos">Preços e serviços</a>
             <a class="universal-footer__link" href="/#faq">Perguntas frequentes</a>
@@ -205,6 +208,7 @@ def footer() -> str:
           </nav>
           <nav class="universal-footer__column" aria-label="Suporte" data-label="Suporte">
             <a class="universal-footer__link" href="{WHATSAPP_ORDER}" target="_blank" rel="noopener noreferrer">Pedido no WhatsApp</a>
+            <a class="universal-footer__link" href="{WHATSAPP_GROUP}" target="_blank" rel="noopener noreferrer">Grupo WhatsApp</a>
             <a class="universal-footer__link" href="{DISCORD_URL}" target="_blank" rel="noopener noreferrer">Comunidade no Discord</a>
           </nav>
           <nav class="universal-footer__column" aria-label="Institucional" data-label="Institucional">
@@ -215,7 +219,7 @@ def footer() -> str:
         </div>
         <div class="universal-footer__bottom">
           <div class="universal-footer__socials" aria-label="Redes sociais">
-            <a class="universal-footer__social-link universal-footer__social-link--whatsapp" href="{WHATSAPP_GROUP}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a>
+            <a class="universal-footer__social-link universal-footer__social-link--whatsapp" href="{WHATSAPP_GROUP}" target="_blank" rel="noopener noreferrer" aria-label="Grupo WhatsApp">WA</a>
             <a class="universal-footer__social-link universal-footer__social-link--discord" href="{DISCORD_URL}" target="_blank" rel="noopener noreferrer" aria-label="Discord">DC</a>
             <a class="universal-footer__social-link universal-footer__social-link--facebook" href="{FACEBOOK_URL}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
           </div>
@@ -397,8 +401,35 @@ def home_main(sizes: dict[str, tuple[int, int]]) -> str:
         </article>
         <article class="feature-card">
           <h3>Jogar Naruto Online</h3>
-          <p>Links, downloads e apoio para quem joga Naruto Online no BR, NA ou Sakai e quer reduzir retrabalho na rotina de contas.</p>
+          <p>Guia rápido para entrar no Naruto Online oficial, entender servidores, classes, launcher e organizar sua rotina de contas.</p>
+          <a class="text-link" href="/jogar-naruto-online/">Abrir guia para jogar Naruto Online</a>
         </article>
+      </div>
+    </section>
+
+    <section id="jogar-naruto-online" class="section-band section-band--alt">
+      <div class="section-heading">
+        <span class="section-kicker">Naruto Online oficial</span>
+        <h2>Jogar Naruto Online no navegador, com conta, servidor e launcher</h2>
+        <p>O site oficial reúne registro, login, lista de servidores, notícias, eventos, tutorial, imagens, fórum e central de download. A Now Fakes organiza um guia simples para quem quer jogar Naruto Online e usar fakes com menos confusão.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Registro e login</h3>
+          <p>Crie ou acesse sua conta pelo portal oficial antes de escolher servidor, classe e rotina de jogo.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Servidores e eventos</h3>
+          <p>Acompanhe aberturas de servidores, anúncios e eventos no site oficial para decidir onde usar suas fakes.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Classes e tutorial</h3>
+          <p>Compare classes como Lâmina das Trevas, Olho das Chamas, Dançarina dos Ventos, Garra das Águas e Punho de Pedra.</p>
+        </article>
+      </div>
+      <div class="section-actions">
+        <a class="btn btn--primary" href="/jogar-naruto-online/">Ver guia completo</a>
+        <a class="btn btn--secondary" href="{OFFICIAL_NARUTO_URL}" target="_blank" rel="noopener noreferrer">Abrir site oficial</a>
       </div>
     </section>
 
@@ -806,6 +837,131 @@ def about_main() -> str:
       </div>
     </section>
     """
+
+
+def jogar_naruto_online_main() -> str:
+    return f"""
+    <section class="hero hero--subpage">
+      <div class="hero__content">
+        <span class="section-kicker">Guia independente</span>
+        <h1>Jogar Naruto Online oficial: registro, servidores, launcher e classes</h1>
+        <p>Guia rápido para quem quer jogar Naruto Online no navegador, encontrar o site oficial, entender a escolha de servidor e organizar fakes para eventos, raspadinha e rotina de jogo.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="{OFFICIAL_NARUTO_URL}" target="_blank" rel="noopener noreferrer">Abrir Naruto Online oficial</a>
+          <a class="btn btn--secondary" href="{WHATSAPP_ORDER}" target="_blank" rel="noopener noreferrer">Pedir fakes no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band">
+      <div class="section-heading">
+        <span class="section-kicker">Jogo do Naruto</span>
+        <h2>O que procurar no site oficial do Naruto Online</h2>
+        <p>O portal oficial do Naruto Online em português concentra áreas importantes para jogadores: notícias, eventos, anúncios, tutorial, iniciante, informações, imagens, fórum, SAC, launcher, registro, login e seleção de servidores.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Registro e entrada rápida</h3>
+          <p>Use o portal oficial para criar conta, recuperar senha, fazer login e escolher um servidor ativo antes de começar a jogar.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Servidores novos</h3>
+          <p>Acompanhe anúncios e aberturas de servidores para decidir onde vale iniciar uma conta principal ou organizar fakes auxiliares.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Launcher e suporte</h3>
+          <p>Consulte a central de download e os canais oficiais quando precisar de launcher, tutorial ou atendimento do próprio jogo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band section-band--alt">
+      <div class="section-heading">
+        <span class="section-kicker">Classes Naruto Online</span>
+        <h2>Classes para começar no Naruto Online</h2>
+        <p>Antes de jogar Naruto Online, compare o estilo de cada classe. A escolha muda sua rotina de batalha, suporte e organização em eventos.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><h3>Lâmina das Trevas</h3><p>Classe ligada a espada e ninjutsu de relâmpago, boa para quem prefere pressão ofensiva.</p></article>
+        <article class="feature-card"><h3>Olho das Chamas</h3><p>Classe de fogo e genjutsu, indicada para estratégias de controle e dano constante.</p></article>
+        <article class="feature-card"><h3>Dançarina dos Ventos</h3><p>Classe de vento, útil para ataques em área e combinações rápidas com ninjas de suporte.</p></article>
+        <article class="feature-card"><h3>Garra das Águas</h3><p>Classe com cura, veneno e estilo água, interessante para formações mais defensivas.</p></article>
+        <article class="feature-card"><h3>Punho de Pedra</h3><p>Classe de terra e taijutsu, focada em resistência, defesa e presença na linha de frente.</p></article>
+        <article class="feature-card"><h3>Fakes e eventos</h3><p>Depois de definir servidor e objetivo, a Now Fakes ajuda a organizar fakes para raspadinha, eventos e rotina de contas.</p></article>
+      </div>
+    </section>
+
+    <section class="section-band">
+      <div class="conversion-strip">
+        <div>
+          <span class="section-kicker">SEO + conversão</span>
+          <h2>Quer jogar Naruto Online e preparar fakes para eventos?</h2>
+          <p>Entre no site oficial para registro e servidor. Depois fale com a Now Fakes para combinar quantidade, nível, região e prazo das fakes.</p>
+        </div>
+        <a class="btn btn--primary" href="{WHATSAPP_ORDER}" target="_blank" rel="noopener noreferrer">Organizar fakes agora</a>
+      </div>
+    </section>
+
+    <section class="section-band section-band--alt">
+      <div class="section-heading">
+        <span class="section-kicker">Perguntas frequentes</span>
+        <h2>FAQ sobre jogar Naruto Online</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Onde jogar Naruto Online oficial?</summary>
+          <p>O acesso deve ser feito pelo portal oficial em português, onde ficam registro, login, notícias, eventos, tutoriais, suporte e servidores.</p>
+        </details>
+        <details>
+          <summary>O Naruto Online roda no navegador?</summary>
+          <p>O portal oficial apresenta o jogo como RPG online para navegador e também mantém uma área de launcher e download para jogadores.</p>
+        </details>
+        <details>
+          <summary>Fakes ajudam em que parte do Naruto Online?</summary>
+          <p>Fakes podem ajudar em organização de eventos, raspadinha, testes por servidor e rotina de contas, sempre conforme o objetivo do jogador.</p>
+        </details>
+      </div>
+    </section>
+    """
+
+
+def jogar_naruto_online_schema() -> dict:
+    title = "Jogar Naruto Online Oficial: Registro, Launcher e Classes | Now Fakes"
+    description = "Guia para jogar Naruto Online oficial em português, acessar registro, servidores, launcher, tutorial, classes e organizar fakes para eventos."
+    faqs = [
+        ("Onde jogar Naruto Online oficial?", "O acesso deve ser feito pelo portal oficial em português, onde ficam registro, login, notícias, eventos, tutoriais, suporte e servidores."),
+        ("O Naruto Online roda no navegador?", "O portal oficial apresenta o jogo como RPG online para navegador e também mantém uma área de launcher e download para jogadores."),
+        ("Fakes ajudam em que parte do Naruto Online?", "Fakes podem ajudar em organização de eventos, raspadinha, testes por servidor e rotina de contas, conforme o objetivo do jogador."),
+    ]
+    return {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": title,
+                "url": site_url("/jogar-naruto-online/"),
+                "description": description,
+                "inLanguage": "pt-BR",
+                "about": {"@type": "VideoGame", "name": "Naruto Online", "url": OFFICIAL_NARUTO_URL},
+                "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": BASE_URL + "/"},
+                "publisher": {"@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/"},
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Início", "item": BASE_URL + "/"},
+                    {"@type": "ListItem", "position": 2, "name": "Jogar Naruto Online", "item": site_url("/jogar-naruto-online/")},
+                ],
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {"@type": "Question", "name": question, "acceptedAnswer": {"@type": "Answer", "text": answer}}
+                    for question, answer in faqs
+                ],
+            },
+        ],
+    }
 
 
 def generic_schema(title: str, description: str, path: str) -> dict:
@@ -1235,6 +1391,30 @@ def build_css() -> str:
     .feature-card p, .download-card p, .testimonial-card p, .step-card p, .media-card p {
       margin-bottom: 0;
       color: var(--muted);
+    }
+
+    .text-link {
+      width: fit-content;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 12px;
+      color: var(--red);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .text-link:hover {
+      text-decoration: underline;
+    }
+
+    .section-actions {
+      width: min(100%, 1080px);
+      margin: 18px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
     .conversion-strip {
@@ -2270,6 +2450,20 @@ def main() -> None:
         title, description, main_html, schema, keywords = download_page(kind)
         pages.append({"page_id": f"download-{kind}", "path": path, "file": file_path, "title": title, "description": description, "main": main_html, "schema": schema, "keywords": keywords, "indexed": True})
 
+    jogar_title = "Jogar Naruto Online Oficial: Registro, Launcher e Classes | Now Fakes"
+    jogar_description = "Guia para jogar Naruto Online oficial em português, acessar registro, servidores, launcher, tutorial, classes e organizar fakes para eventos."
+    pages.append({
+        "page_id": "jogar-naruto-online",
+        "path": "/jogar-naruto-online/",
+        "file": "jogar-naruto-online/index.html",
+        "title": jogar_title,
+        "description": jogar_description,
+        "main": jogar_naruto_online_main(),
+        "schema": jogar_naruto_online_schema(),
+        "keywords": ["jogar Naruto Online", "Naruto Online oficial", "Jogo do Naruto", "RPG Naruto Online", "launcher Naruto Online", "classes Naruto Online"],
+        "indexed": True,
+    })
+
     goku_title = "Goku Fakes para Naruto Online e Raspadinha | Now Fakes"
     goku_description = "Formulário Goku Fakes para pedir fakes de Naruto Online por quantidade, servidor, região, amizade e raspadinha via WhatsApp."
     pages.append({
@@ -2348,7 +2542,7 @@ def main() -> None:
         Now Fakes é um site em português para jogadores de Naruto Online que procuram fakes para raspadinha no Naruto Online, fakes para Naruto Online, downloads de launcher e suporte por WhatsApp ou Discord.
 
         URL principal: {BASE_URL}/
-        Principais páginas: /, /download-launcher-fakes/, /download-launcher-trainer/, /sobre-nos/
+        Principais páginas: /, /jogar-naruto-online/, /download-launcher-fakes/, /download-launcher-trainer/, /sobre-nos/
         Contato comercial: {WHATSAPP_ORDER}
         """,
     )
@@ -2360,6 +2554,7 @@ def main() -> None:
         https://nowfakes7.netlify.app/* https://www.narutoonline.shop/:splat 301!
         /download-launcher-fakes /download-launcher-fakes/ 301
         /download-launcher-trainer /download-launcher-trainer/ 301
+        /jogar-naruto-online /jogar-naruto-online/ 301
         /gokufakes /gokufakes/ 301
         /divulgador /divulgador/ 301
         /sobre-nos /sobre-nos/ 301
